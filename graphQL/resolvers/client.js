@@ -1,11 +1,11 @@
-const Projects = require("../models/projectModel");
+const Client = require("../../models/clientModel");
 
 const resolvers = {
   Query: {
-    async getProjects() {
+    async getClients() {
       try {
-        const projects = await Projects.find();
-        return projects;
+        const clients = await Client.find();
+        return clients;
       } catch (error) {
         throw new Error(error);
       }

@@ -5,11 +5,20 @@ type Project{
     description: String!,
     status: String!,
     clientId: String!,
-    countDownEndTime: String!
+    countDownEndTime: String!,
+    createdAt: String!
+}
+type Client{
+    id: ID!,
+    name: String!,
+    email: String!,
+    phone: String!,
+    createdAt: String!
 }
 
 type Query{
-    getProjects : [Project]
+    getProjects : [Project],
+    getClients : [Client]
 }
 `;
 
