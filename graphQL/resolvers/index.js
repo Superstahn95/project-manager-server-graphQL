@@ -6,6 +6,10 @@ const resolvers = {
     ...projectResolvers.Query,
     ...clientResolvers.Query,
   },
+  Mutation: {
+    ...projectResolvers.Mutation,
+    ...clientResolvers.Mutation,
+  },
 };
 
 module.exports = resolvers;
